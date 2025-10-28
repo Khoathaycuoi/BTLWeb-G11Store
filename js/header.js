@@ -252,7 +252,7 @@ document.getElementById("btn-login").addEventListener("click", () => {
 function showLoggedUser(name) {
   signinBtn.innerHTML = `
     <p>${name}</p>
-    <img src="./assets/icons/Dangnhap.png" alt="" />
+    <img src="./assets/icons/header/Dangnhap.png" alt="" />
   `;
   signinBtn.classList.add("user-logged");
 }
@@ -264,7 +264,7 @@ document.getElementById("logout-btn").addEventListener("click", () => {
 
   signinBtn.innerHTML = `
     <p>Đăng nhập</p>
-    <img src="./assets/icons/Dangnhap.png" alt="" />
+    <img src="./assets/icons/header/Dangnhap.png" alt="" />
   `;
   signinBtn.classList.remove("user-logged");
 

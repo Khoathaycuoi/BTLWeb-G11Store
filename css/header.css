@@ -39,7 +39,7 @@ header {
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(0);
+    transform: translateX(37%);
   }
   100% {
     transform: translateX(-100%);
