@@ -2,7 +2,7 @@ const ipProducts = [
   {
     id: 1,
     name: "iPhone 17 Pro Max 512GB",
-    img: "assets/images/iphone-17-pro-max-256gb.png",
+    img: "assets/images/iphone/iphone-17-pro-max-256gb.png",
     price: 40049000,
     oldPrice: 44499000,
     discount: 10,
@@ -12,7 +12,7 @@ const ipProducts = [
   {
     id: 2,
     name: "iPhone 17 Pro Max 256GB",
-    img: "assets/images/iphone-17-pro-max-256gb.png",
+    img: "assets/images/iphone/iphone-17-pro-max-256gb.png",
     price: 33059000,
     oldPrice: 37999000,
     discount: 13,
@@ -22,7 +22,7 @@ const ipProducts = [
   {
     id: 3,
     name: "iPhone 17 Pro 256GB",
-    img: "assets/images/iphone-17-pro-256gb.png",
+    img: "assets/images/iphone/iphone-17-pro-256gb.png",
     price: 31319000,
     oldPrice: 34799000,
     discount: 10,
@@ -32,7 +32,7 @@ const ipProducts = [
   {
     id: 4,
     name: "iPhone 17 256GB",
-    img: "assets/images/iphone-17-256gb.png",
+    img: "assets/images/iphone/iphone-17-256gb.png",
     price: 20490000,
     oldPrice: 24999000,
     discount: 13,
@@ -42,7 +42,7 @@ const ipProducts = [
   {
     id: 5,
     name: "iPhone 17 Air 256GB",
-    img: "assets/images/iphone-air.png",
+    img: "assets/images/iphone/iphone-air.png",
     price: 29440000,
     oldPrice: 30990000,
     discount: 5,
@@ -52,7 +52,7 @@ const ipProducts = [
   {
     id: 6,
     name: "iPhone 17 Air 128GB",
-    img: "assets/images/iphone-air.png",
+    img: "assets/images/iphone/iphone-air.png",
     price: 26210000,
     oldPrice: 28490000,
     discount: 5,
@@ -62,7 +62,7 @@ const ipProducts = [
   {
     id: 7,
     name: "iPhone 16 Pro Max 256GB",
-    img: "assets/images/iphone-16-pro-max-256gb.png",
+    img: "assets/images/iphone/iphone-16-pro-max-256gb.png",
     price: 26439000,
     oldPrice: 30390000,
     discount: 13,
@@ -70,7 +70,7 @@ const ipProducts = [
   {
     id: 8,
     name: "iPhone 16 Pro 128GB",
-    img: "assets/images/iphone-16-pro-128gb.png",
+    img: "assets/images/iphone/iphone-16-pro-128gb.png",
     price: 25190000,
     oldPrice: 27490000,
     discount: 13,
@@ -78,7 +78,7 @@ const ipProducts = [
   {
     id: 9,
     name: "iPhone 16 128GB",
-    img: "assets/images/iphone-16-128gb.png",
+    img: "assets/images/iphone/iphone-16-128gb.png",
     price: 18696000,
     oldPrice: 21490000,
     discount: 13,
@@ -88,7 +88,7 @@ const ipProducts = [
   {
     id: 10,
     name: "iPhone 16e 128GB",
-    img: "assets/images/iphone-16e-128gb.png",
+    img: "assets/images/iphone/iphone-16e-128gb.png",
     price: 15290000,
     oldPrice: 16999000,
     discount: 10,
@@ -98,7 +98,7 @@ const ipProducts = [
   {
     id: 11,
     name: "iPhone 15 Pro Max 256GB",
-    img: "assets/images/iphone-15-pro-max-256gb.png",
+    img: "assets/images/iphone/iphone-15-pro-max-256gb.png",
     price: 26990000,
     oldPrice: 37990000,
     discount: 28,
@@ -108,7 +108,7 @@ const ipProducts = [
   {
     id: 12,
     name: "iPhone 15 Plus 128GB",
-    img: "assets/images/iphone-15-plus-128gb.png",
+    img: "assets/images/iphone/iphone-15-plus-128gb.png",
     price: 18490000,
     oldPrice: 27990000,
     discount: 33,
@@ -118,7 +118,7 @@ const ipProducts = [
   {
     id: 13,
     name: "iPhone 14 Plus 128GB",
-    img: "assets/images/iphone-14-plus-128gb.png",
+    img: "assets/images/iphone/iphone-14-plus-128gb.png",
     price: 17390000,
     oldPrice: 27990000,
     discount: 37,
@@ -128,7 +128,7 @@ const ipProducts = [
   {
     id: 14,
     name: "iPhone 13 128GB",
-    img: "assets/images/iphone-13-128gb.png",
+    img: "assets/images/iphone/iphone-13-128gb.png",
     price: 11890000,
     oldPrice: 17290000,
     discount: 13,
@@ -136,7 +136,7 @@ const ipProducts = [
   {
     id: 15,
     name: "iPhone 14 128GB",
-    img: "assets/images/iphone-14-128gb.png",
+    img: "assets/images/iphone/iphone-14-128gb.png",
     price: 34990000,
     oldPrice: 39990000,
     discount: 37,
@@ -146,7 +146,7 @@ const ipProducts = [
   {
     id: 16,
     name: "iPhone 11 128GB",
-    img: "assets/images/iphone-11-128gb.png",
+    img: "assets/images/iphone/iphone-11-128gb.png",
     price: 9490000,
     oldPrice: 16990000,
     discount: 44,
@@ -156,7 +156,7 @@ const ipProducts = [
   {
     id: 17,
     name: "iPhone 11 256GB",
-    img: "assets/images/iphone-11-128gb.png",
+    img: "assets/images/iphone/iphone-11-128gb.png",
     price: 10990000,
     oldPrice: 18990000,
     discount: 35,
@@ -167,7 +167,7 @@ const ipProducts = [
   {
     id: 17,
     name: "iPhone 11 64GB",
-    img: "assets/images/iphone-11-128gb.png",
+    img: "assets/images/iphone/iphone-11-128gb.png",
     price: 8990000,
     oldPrice: 1249000,
     discount: 20,
