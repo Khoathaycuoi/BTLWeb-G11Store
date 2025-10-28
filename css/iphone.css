@@ -1,0 +1,131 @@
+main {
+  margin-top: 15vh;
+}
+
+/* ---------------Slide--------------- */
+#carouselExampleIndicators {
+  z-index: 1;
+  margin: auto;
+  width: 80%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.carousel-item img {
+  border-radius: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/*--------------- Card ------------------*/
+.card {
+  padding: 20px;
+  border-radius: 12px !important;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card img {
+  border-radius: 12px;
+}
+.card-img-top {
+  height: 70%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  border: none;
+  padding: 10px;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.text-danger {
+  font-size: 24px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.text-delivery {
+  color: #0d6efd;
+}
+
+/* ------------------ Popup thêm vào giỏ hàng ------------------ */
+.add-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+.add-popup-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.25s ease;
+}
+.add-popup-content img {
+  width: 120px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.qty-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.qty-box button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #dc3545;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.qty-box span {
+  min-width: 25px;
+  font-weight: 600;
+}
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.popup-buttons button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+#confirmAdd {
+  background: #dc3545;
+  color: #fff;
+}
+#cancelAdd {
+  background: #ccc;
+}
