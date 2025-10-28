@@ -41,7 +41,7 @@ const ipProducts = [
   },
   {
     id: 5,
-    name: "iPhone 17 Air 256GB",
+    name: "iPhone Air 256GB",
     img: "assets/images/iphone/iphone-air.png",
     price: 29440000,
     oldPrice: 30990000,
@@ -51,7 +51,7 @@ const ipProducts = [
   },
   {
     id: 6,
-    name: "iPhone 17 Air 128GB",
+    name: "iPhone Air 128GB",
     img: "assets/images/iphone/iphone-air.png",
     price: 26210000,
     oldPrice: 28490000,

@@ -1,3 +1,4 @@
+// Render sản phẩm
 function renderProducts(products, containerId) {
   const container = document.getElementById(containerId);
 

@@ -149,7 +149,7 @@ closeCartBtn.addEventListener("click", () => {
 // Nút thanh toán
 checkoutBtn.addEventListener("click", () => {
   if (cart.length === 0) return alert("Giỏ hàng trống! Vui lòng thêm sản phẩm");
-  alert("Thanh toán thành công! Cảm ơn bạn đã mua hàng.");
+  alert("Thông tin đơn hàng đã được gửi, vui lòng chờ liên hệ từ cửa hàng!");
   cart.length = 0;
   renderCart();
   localStorage.removeItem("cart");
@@ -216,6 +216,8 @@ document.getElementById("btn-register").addEventListener("click", () => {
   const phone = document.getElementById("reg-phone").value.trim();
   const password = document.getElementById("reg-password").value.trim();
 
+  if (!fullname || !phone || !password)
+    return alert("Vui lòng điền đầy đủ thông tin!");
   if (!nameRegex.test(fullname)) return alert("Họ tên không hợp lệ!");
   if (!phoneRegex.test(phone)) return alert("Số điện thoại không hợp lệ!");
   if (password.length < 4) return alert("Mật khẩu phải ≥ 4 ký tự!");
@@ -240,6 +242,7 @@ document.getElementById("btn-login").addEventListener("click", () => {
   let users = JSON.parse(localStorage.getItem("users") || "[]");
   const found = users.find((u) => u.phone === phone && u.password === password);
 
+  if (!phone || !password) return alert("Vui lòng điền đầy đủ thông tin!");
   if (!found) return alert("SĐT hoặc mật khẩu sai!");
 
   localStorage.setItem("loggedUser", JSON.stringify(found));

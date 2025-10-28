@@ -72,9 +72,13 @@ document.addEventListener("click", (e) => {
     if (type === "iphone") {
       window.location.href = `./iphone.html`;
     } else if (type === "mac") {
+      window.location.href = `./mac.html`;
     } else if (type === "ipad") {
+      window.location.href = `./ipad.html`;
     } else if (type === "watch") {
+      window.location.href = `./watch.html`;
     } else if (type === "phukien") {
+      window.location.href = `./phukien.html`;
     }
   }
 });
@@ -86,9 +90,13 @@ document.addEventListener("click", (e) => {
   if (type === "iphone") {
     window.location.href = `./iphone.html`;
   } else if (type === "mac") {
+    window.location.href = `./mac.html`;
   } else if (type === "ipad") {
+    window.location.href = `./ipad.html`;
   } else if (type === "watch") {
+    window.location.href = `./watch.html`;
   } else if (type === "phukien") {
+    window.location.href = `./phukien.html`;
   }
 });
 
@@ -111,6 +119,15 @@ document.addEventListener("click", (e) => {
     e.target.matches(".btn-outline-danger") ||
     e.target.matches(".card-img-top")
   ) {
+    // Nếu chưa đăng nhập thì mở popup đăng nhập
+    const user = JSON.parse(localStorage.getItem("loggedUser"));
+    if (!user) {
+      loginPopup.style.display = "flex";
+      document.body.style.overflow = "hidden";
+      alert("Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng!");
+      return;
+    }
+
     const card = e.target.closest(".card");
     const name = card.querySelector(".card-title").textContent;
     const price = parseInt(
@@ -144,7 +161,7 @@ confirmAdd.addEventListener("click", () => {
   const qty = parseInt(popupQty.textContent);
   if (currentProduct) {
     addToCart({ ...currentProduct, qty });
-    alert(`✅ Đã thêm ${qty} x ${currentProduct.name} vào giỏ`);
+    alert(`Đã thêm ${qty} x ${currentProduct.name} vào giỏ`);
   }
   addPopup.style.display = "none";
   document.body.style.overflow = "";
