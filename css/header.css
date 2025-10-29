@@ -150,37 +150,6 @@ header {
   font-weight: 500;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  header {
-    position: relative;
-  }
-  .khoat-header-content {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .khoat-nav-bar {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .khoat-nav-bar div input {
-    width: 180px;
-  }
-}
-
-@media (max-width: 600px) {
-  .khoat-nav-bar a {
-    font-size: 13px;
-  }
-
-  .giohang p,
-  .signin p {
-    display: none;
-  }
-}
 /* --- Popup Gợi ý Tìm kiếm  --- */
 .search-popup {
   position: absolute;
@@ -241,14 +210,14 @@ header {
   color: #333;
 }
 
-/* --- Tên Sản phẩm (Class cụ thể) --- */
+/* ----- Tên Sản phẩm--------- */
 .suggest-name {
   font-weight: 500;
 }
 
 /* --- Giá --- */
 .suggest-price {
-  color: #d70018; /* Màu đỏ nổi bật */
+  color: #d70018;
   font-size: 13px;
   font-weight: 600;
 }
@@ -433,7 +402,7 @@ header {
   font-weight: 600;
 }
 
-/* Popup nhỏ dưới avatar */
+/* Popup đăng xuất*/
 .user-popup {
   display: none;
   position: absolute;
@@ -456,4 +425,43 @@ header {
 
 .user-popup li:hover {
   background: #eee;
+}
+
+/*---------- Responsive -------------*/
+/* tablet */
+@media (max-width: 992px) {
+  .khoat-nav-bar {
+    flex-wrap: wrap;
+  }
+}
+/* mobile lớn */
+@media (max-width: 768px) {
+  header {
+    position: relative;
+  }
+  .khoat-header-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .khoat-nav-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .khoat-nav-bar div input {
+    width: 180px;
+  }
+}
+/* mobile */
+@media (max-width: 480px) {
+  .khoat-nav-bar a {
+    font-size: 13px;
+  }
+
+  .giohang p,
+  .signin p {
+    display: none;
+  }
 }

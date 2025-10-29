@@ -80,7 +80,7 @@ main {
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  width: 320px;
+  width: 400px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.25s ease;
 }
@@ -128,4 +128,98 @@ main {
 }
 #cancelAdd {
   background: #ccc;
+}
+
+/* ---------------Responsive------------- */
+
+/* tablet lớn*/
+@media (max-width: 992px) {
+  main {
+    margin-top: 22vh;
+  }
+  #carouselExampleIndicators {
+    width: 90%;
+  }
+
+  .box-sp-home {
+    margin: 60px auto;
+  }
+  .box-sp-item {
+    margin: 0 15px;
+  }
+
+  .title-card-container {
+    font-size: 40px !important;
+  }
+
+  .add-popup-content {
+    width: 350px;
+  }
+}
+
+/* Tablet nhỏ */
+@media (max-width: 768px) {
+  main {
+    margin-top: 20px;
+  }
+
+  #carouselExampleIndicators {
+    width: 95%;
+  }
+
+  .title-card-container {
+    font-size: 35px !important;
+  }
+
+  .add-popup-content {
+    width: 350px;
+  }
+}
+
+/* điện thoại */
+@media (max-width: 480px) {
+  main {
+    margin-top: 30px;
+  }
+
+  #carouselExampleIndicators {
+    width: 100%;
+  }
+
+  .carousel-item img {
+    border-radius: 10px;
+  }
+
+  .box-sp-home {
+    flex-direction: column;
+    margin: 40px auto;
+  }
+  .box-sp-item {
+    flex: 0 0 90%;
+    margin: 10px auto;
+  }
+
+  .title-card-container {
+    font-size: 28px !important;
+  }
+
+  /* Popup thêm vào giỏ */
+  .add-popup-content {
+    width: 300px;
+    padding: 15px;
+  }
+
+  /* Chọn số lượng thêm vào giỏ */
+  .qty-box button {
+    width: 28px;
+    height: 28px;
+  }
+  .qty-box span {
+    min-width: 20px;
+  }
+
+  /* Box sản phẩm text */
+  .box-sp-item p {
+    font-size: 16px;
+  }
 }
