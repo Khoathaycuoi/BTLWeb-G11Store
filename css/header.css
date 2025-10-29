@@ -453,13 +453,23 @@ header {
   .khoat-nav-bar div input {
     width: 180px;
   }
+  .giohang p,
+  .signin p {
+    display: none;
+  }
 }
 /* mobile */
 @media (max-width: 480px) {
   .khoat-nav-bar a {
     font-size: 13px;
   }
-
+  .khoat-nav-bar div input {
+    width: 140px;
+    margin-left: 0;
+  }
+  #search-input::placeholder {
+    opacity: 0;
+  }
   .giohang p,
   .signin p {
     display: none;
