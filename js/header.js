@@ -6,7 +6,7 @@ document.querySelector("#logo-store").addEventListener("click", () => {
 const searchInput = document.getElementById("search-input");
 const popup = document.getElementById("search-popup");
 
-// --- Gom dữ liệu từ nhiều file JS ---
+// --- Gom dữ liệu từ nhiều file JS -----
 const allProducts = [
   ...(typeof ipProducts !== "undefined" ? ipProducts : []),
   ...(typeof macProducts !== "undefined" ? macProducts : []),
@@ -18,7 +18,7 @@ const allProducts = [
 // --- Lấy danh sách tên sản phẩm ---
 const productNames = allProducts.map((p) => p.name);
 
-// --- Hàm bôi đậm phần trùng ---
+// --- Hàm bôi đậm phần tìm kiếm trùng ---
 function highlightMatch(text, keyword) {
   if (!keyword) return text;
   const regex = new RegExp(`(${keyword})`, "gi");
@@ -62,9 +62,9 @@ function showSuggestions(keyword = "") {
   popup.style.display = "block";
 }
 
-// --- Sự kiện ---
-searchInput.addEventListener("focus", () => showSuggestions());
-searchInput.addEventListener("input", (e) => showSuggestions(e.target.value));
+// --- Sự kiện tìm kiếm ---
+searchInput.addEventListener("focus", () => showSuggestions()); // Hiển thị gợi ý khi focus
+searchInput.addEventListener("input", (e) => showSuggestions(e.target.value)); // Cập nhật gợi ý khi nhập
 
 popup.addEventListener("click", (e) => {
   if (e.target.tagName === "P" || e.target.tagName === "STRONG") {
@@ -146,7 +146,7 @@ closeCartBtn.addEventListener("click", () => {
   document.body.style.overflow = "";
 });
 
-// Nút thanh toán
+// Nút Đặt hàng
 checkoutBtn.addEventListener("click", () => {
   if (cart.length === 0) return alert("Giỏ hàng trống! Vui lòng thêm sản phẩm");
   alert("Thông tin đơn hàng đã được gửi, vui lòng chờ liên hệ từ cửa hàng!");
@@ -173,19 +173,19 @@ const userPopup = document.getElementById("user-popup");
 const nameRegex = /^[A-Za-zÀ-ỹ\s]+$/;
 const phoneRegex = /^0\d{9}$/;
 
-// 🎯 Hàm mở popup đăng nhập
+// Hàm mở popup đăng nhập
 function openLogin() {
   loginPopup.style.display = "flex";
   userPopup.style.display = "none";
 }
 
-// 🎯 Hàm toggle popup đăng xuất
+// Hàm toggle popup đăng xuất
 function toggleLogoutMenu() {
   userPopup.style.display =
     userPopup.style.display === "block" ? "none" : "block";
 }
 
-// 🎯 Chỉ 1 sự kiện duy nhất cho signin
+// Chỉ 1 sự kiện duy nhất cho signin(Đăng nhập/Đăng xuất)
 signinBtn.addEventListener("click", () => {
   const user = JSON.parse(localStorage.getItem("loggedUser"));
   if (user) toggleLogoutMenu();
@@ -203,7 +203,7 @@ document.getElementById("open-login").addEventListener("click", () => {
   loginPopup.style.display = "flex";
 });
 
-// Click nền đen để đóng popup
+// Click nền để đóng popup
 document.querySelectorAll(".popup-bg").forEach((bg) => {
   bg.addEventListener("click", (e) => {
     if (e.target === bg) bg.style.display = "none";

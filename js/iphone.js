@@ -86,7 +86,7 @@ confirmAdd.addEventListener("click", () => {
   const qty = parseInt(popupQty.textContent);
   if (currentProduct) {
     addToCart({ ...currentProduct, qty });
-    alert(`✅ Đã thêm ${qty} x ${currentProduct.name} vào giỏ`);
+    alert(`Đã thêm ${qty} x ${currentProduct.name} vào giỏ`);
   }
   addPopup.style.display = "none";
   document.body.style.overflow = "";
