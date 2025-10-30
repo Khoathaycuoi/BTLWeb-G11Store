@@ -1,0 +1,167 @@
+main {
+  margin-top: 13vh;
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Ảnh banner */
+.img-care {
+  width: 80%;
+  margin: 0 auto;
+}
+.img-care img {
+  width: 100%;
+  height: auto;
+}
+/* Tiêu đề */
+.care-H1 {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.care-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.care-item {
+  height: 200px;
+  text-align: center;
+}
+
+.care-item img {
+  height: 100px;
+}
+
+.care-item p {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Chuột hover vào chữ đổi màu */
+.care-item p:hover {
+  color: #dc3545;
+  cursor: pointer;
+}
+
+.dichvu {
+  display: flex;
+  width: 70%;
+  height: auto;
+  gap: 50px;
+  margin: 50px auto;
+  flex-wrap: wrap;
+}
+
+.dichvu-item {
+  text-align: center;
+  margin: auto;
+  width: 200px;
+  border-radius: 15px;
+  background-color: rgb(235, 235, 235);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dichvu-item p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+/* Hover thì phóng to */
+.dichvu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.hotro {
+  width: 100%;
+  height: auto;
+  background-color: azure;
+  margin-bottom: 100px;
+}
+
+.hotro h4 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.hotro p {
+  text-align: center;
+  font-size: 20px;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.hotro button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #dc3545;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* đổi màu nền và chữ */
+.hotro button:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.hotro img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+/* --------------------Responsive--------------- */
+
+/*tablet*/
+@media (max-width: 992px) {
+  main {
+    margin-top: 22vh;
+  }
+  .care-H1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 20px;
+  }
+  .care-item {
+    width: 25%;
+  }
+  .dichvu-item {
+    width: 40%;
+  }
+}
+/* mobile */
+@media (max-width: 480px) {
+  main {
+    margin-top: 30px;
+  }
+  .care-item {
+    width: 30%;
+  }
+}

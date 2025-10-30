@@ -86,6 +86,7 @@ document.addEventListener("click", (e) => {
 // ---------------------- Chọn box sản phẩm --------------------
 document.addEventListener("click", (e) => {
   const items = e.target.closest(".box-sp-item");
+  if (!items) return;
   const type = items.dataset.type;
   if (type === "iphone") {
     window.location.href = `./iphone.html`;
