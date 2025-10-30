@@ -149,10 +149,15 @@ closeCartBtn.addEventListener("click", () => {
 // Nút Đặt hàng
 checkoutBtn.addEventListener("click", () => {
   if (cart.length === 0) return alert("Giỏ hàng trống! Vui lòng thêm sản phẩm");
-  alert("Thông tin đơn hàng đã được gửi, vui lòng chờ liên hệ từ cửa hàng!");
-  cart.length = 0;
-  renderCart();
-  localStorage.removeItem("cart");
+  const Dathang = confirm("Bạn có chắc muốn đặt hàng?");
+  if (Dathang) {
+    alert("Thông tin đơn hàng đã được gửi, vui lòng chờ liên hệ từ cửa hàng!");
+    cart.length = 0;
+    renderCart();
+    localStorage.removeItem("cart");
+  } else {
+    return alert("Đã hủy đặt hàng");
+  }
 });
 
 // Ẩn khi click nền ngoài
@@ -172,7 +177,9 @@ const userPopup = document.getElementById("user-popup");
 // Regex kiểm tra dữ liệu
 const nameRegex = /^[A-Za-zÀ-ỹ\s]+$/;
 const phoneRegex = /^0\d{9}$/;
-
+const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z]{2,}$/i;
+const passwordRegex = /^(?=.*\d)(?=.*[a-zA-Z]).{6,}$/;
+const addressRegex = /^[A-Za-z0-9À-ỹ\s,.-]+$/;
 // Hàm mở popup đăng nhập
 function openLogin() {
   loginPopup.style.display = "flex";
@@ -192,7 +199,7 @@ signinBtn.addEventListener("click", () => {
   else openLogin();
 });
 
-// ================= Chuyển popup ================= //
+// ---------------------- Chuyển popup ----------------- //
 document.getElementById("open-register").addEventListener("click", () => {
   loginPopup.style.display = "none";
   registerPopup.style.display = "flex";
@@ -210,23 +217,41 @@ document.querySelectorAll(".popup-bg").forEach((bg) => {
   });
 });
 
-// ================= ĐĂNG KÝ ================= //
+// -------------------- ĐĂNG KÝ------------------------ //
 document.getElementById("btn-register").addEventListener("click", () => {
+  const email = document.getElementById("email").value.trim();
   const fullname = document.getElementById("reg-fullname").value.trim();
   const phone = document.getElementById("reg-phone").value.trim();
   const password = document.getElementById("reg-password").value.trim();
+  const confirmPassword = document
+    .getElementById("reg-confirm-password")
+    .value.trim();
+  const address = document.getElementById("reg-address").value.trim();
 
-  if (!fullname || !phone || !password)
+  if (
+    !fullname ||
+    !phone ||
+    !password ||
+    !email ||
+    !confirmPassword ||
+    !address
+  )
     return alert("Vui lòng điền đầy đủ thông tin!");
+
+  if (!emailRegex.test(email)) return alert("Email không hợp lệ!");
   if (!nameRegex.test(fullname)) return alert("Họ tên không hợp lệ!");
   if (!phoneRegex.test(phone)) return alert("Số điện thoại không hợp lệ!");
-  if (password.length < 4) return alert("Mật khẩu phải ≥ 4 ký tự!");
+  if (!passwordRegex.test(password))
+    return alert("Mật khẩu phải chứa ít nhất 6 ký tự, bao gồm chữ và số!");
 
+  if (!addressRegex.test(address)) return alert("Địa chỉ không hợp lệ!");
+  if (password !== confirmPassword)
+    return alert("Mật khẩu xác nhận không khớp!");
   let users = JSON.parse(localStorage.getItem("users") || "[]");
   if (users.some((u) => u.phone === phone))
     return alert("SĐT đã được đăng ký!");
 
-  users.push({ fullname, phone, password });
+  users.push({ fullname, email, phone, password, address });
   localStorage.setItem("users", JSON.stringify(users));
   alert("Đăng ký thành công!");
 
@@ -234,7 +259,7 @@ document.getElementById("btn-register").addEventListener("click", () => {
   loginPopup.style.display = "flex";
 });
 
-// ================= ĐĂNG NHẬP ================= //
+// ----------------- ĐĂNG NHẬP--------------------- //
 document.getElementById("btn-login").addEventListener("click", () => {
   const phone = document.getElementById("login-phone").value.trim();
   const password = document.getElementById("login-password").value.trim();
@@ -251,7 +276,7 @@ document.getElementById("btn-login").addEventListener("click", () => {
   showLoggedUser(found.fullname);
 });
 
-// ================= HIỂN THỊ USER SAU KHI ĐĂNG NHẬP ================= //
+// ------------------- HIỂN THỊ USER SAU KHI ĐĂNG NHẬP -------------------- //
 function showLoggedUser(name) {
   signinBtn.innerHTML = `
     <p>${name}</p>
