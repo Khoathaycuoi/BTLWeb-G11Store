@@ -10,7 +10,7 @@ main {
 
 /* Ảnh banner */
 .img-care {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 .img-care img {
@@ -147,11 +147,15 @@ main {
 
 @media (max-width: 768px) {
   main {
-    margin-top: 20px;
+    margin-top: 0;
+  }
+  .care-H1 {
+    font-size: 40px;
   }
   .care-item {
     width: 25%;
   }
+
   .dichvu-item {
     width: 40%;
   }
@@ -159,7 +163,10 @@ main {
 /* mobile */
 @media (max-width: 480px) {
   main {
-    margin-top: 30px;
+    margin-top: 0;
+  }
+  .care-H1 {
+    font-size: 30px;
   }
   .care-item {
     width: 30%;
