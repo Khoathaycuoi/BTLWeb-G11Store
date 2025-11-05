@@ -6,8 +6,6 @@ const macProducts = [
     price: 25190000,
     oldPrice: 26999000,
     discount: 6,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 2,
@@ -16,8 +14,6 @@ const macProducts = [
     price: 36990000,
     oldPrice: 36990000,
     discount: 0,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 3,
@@ -26,8 +22,6 @@ const macProducts = [
     price: 33290000,
     oldPrice: 34999000,
     discount: 4,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 4,
@@ -36,8 +30,6 @@ const macProducts = [
     price: 24090000,
     oldPrice: 39990000,
     discount: 39,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 5,
@@ -46,8 +38,6 @@ const macProducts = [
     price: 29690000,
     oldPrice: 31999000,
     discount: 7,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 6,
@@ -56,8 +46,6 @@ const macProducts = [
     price: 38990000,
     oldPrice: 41999000,
     discount: 0,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 7,
@@ -66,8 +54,6 @@ const macProducts = [
     price: 49290000,
     oldPrice: 49999000,
     discount: 1,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 8,
@@ -76,8 +62,6 @@ const macProducts = [
     price: 38290000,
     oldPrice: 39999000,
     discount: 4,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 9,
@@ -86,8 +70,6 @@ const macProducts = [
     price: 13990000,
     oldPrice: 14999000,
     discount: 6,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 10,
@@ -96,8 +78,6 @@ const macProducts = [
     price: 33890000,
     oldPrice: 34999000,
     discount: 3,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 11,
@@ -106,7 +86,5 @@ const macProducts = [
     price: 29990000,
     oldPrice: 45990000,
     discount: 34,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
 ];
