@@ -448,6 +448,9 @@ header {
   .khoat-nav-bar {
     flex-wrap: wrap;
   }
+  .khoat-nav-bar a {
+    margin-bottom: 10px;
+  }
 }
 /* mobile lớn */
 @media (max-width: 768px) {
@@ -463,6 +466,9 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+  }
+  .khoat-nav-bar a {
+    margin-bottom: 0px;
   }
 
   .khoat-nav-bar div input {

@@ -53,6 +53,14 @@ document.addEventListener("click", (e) => {
     e.target.matches(".btn-outline-danger") ||
     e.target.matches(".card-img-top")
   ) {
+    // Nếu chưa đăng nhập thì mở popup đăng nhập
+    const user = JSON.parse(localStorage.getItem("loggedUser"));
+    if (!user) {
+      loginPopup.style.display = "flex";
+      alert("Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng!");
+      return;
+    }
+
     const card = e.target.closest(".card");
     const name = card.querySelector(".card-title").textContent;
     const price = parseInt(

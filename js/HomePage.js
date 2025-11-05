@@ -124,7 +124,6 @@ document.addEventListener("click", (e) => {
     const user = JSON.parse(localStorage.getItem("loggedUser"));
     if (!user) {
       loginPopup.style.display = "flex";
-      document.body.style.overflow = "hidden";
       alert("Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng!");
       return;
     }
