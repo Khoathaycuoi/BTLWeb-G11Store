@@ -2,11 +2,31 @@ main {
   margin-top: 18vh;
 }
 
+.khoat-nav-bar a:nth-child(1) {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* video intro */
+.vid-intro {
+  width: 90%;
+  height: auto;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 0 auto 40px auto;
+}
+
+.vid-intro video {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
 /* ---------------Slide--------------- */
 #carouselExampleIndicators {
   z-index: 1;
   margin: auto;
-  width: 80%;
+  width: 90%;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -141,6 +161,10 @@ main {
     width: 90%;
   }
 
+  .vid-intro {
+    width: 90%;
+  }
+
   .box-sp-home {
     margin: 60px auto;
   }
@@ -167,6 +191,10 @@ main {
     width: 95%;
   }
 
+  .vid-intro {
+    width: 95%;
+  }
+
   .title-card-container {
     font-size: 35px !important;
   }
@@ -183,7 +211,11 @@ main {
   }
 
   #carouselExampleIndicators {
-    width: 100%;
+    width: 95%;
+  }
+
+  .video-intro {
+    width: 95%;
   }
 
   .carousel-item img {
