@@ -1,7 +1,10 @@
 main {
-  margin-top: 15vh;
+  margin-top: 18vh;
 }
 
+.khoat-nav-bar a:nth-child(5) {
+  border-bottom: 2px solid #ffffff;
+}
 /* ---------------Slide--------------- */
 #carouselExampleIndicators {
   z-index: 1;
@@ -183,7 +186,7 @@ main {
   }
 
   #carouselExampleIndicators {
-    width: 100%;
+    width: 95%;
   }
 
   .carousel-item img {
