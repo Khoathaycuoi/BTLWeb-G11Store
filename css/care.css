@@ -3,6 +3,10 @@ main {
   width: 100%;
 }
 
+.khoat-nav-bar a:nth-child(6) {
+  border-bottom: 2px solid #ffffff;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;

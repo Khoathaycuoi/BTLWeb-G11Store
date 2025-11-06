@@ -2,6 +2,9 @@ main {
   margin-top: 18vh;
 }
 
+.khoat-nav-bar a:nth-child(3) {
+  border-bottom: 2px solid #ffffff;
+}
 /* ---------------Slide--------------- */
 #carouselExampleIndicators {
   z-index: 1;
