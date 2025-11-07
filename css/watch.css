@@ -171,10 +171,6 @@ main {
     margin: 0 15px;
   }
 
-  .title-card-container {
-    font-size: 40px !important;
-  }
-
   .add-popup-content {
     width: 350px;
   }
@@ -188,10 +184,6 @@ main {
 
   #carouselExampleIndicators {
     width: 95%;
-  }
-
-  .title-card-container {
-    font-size: 35px !important;
   }
 
   .add-popup-content {
@@ -220,10 +212,6 @@ main {
   .box-sp-item {
     flex: 0 0 90%;
     margin: 10px auto;
-  }
-
-  .title-card-container {
-    font-size: 28px !important;
   }
 
   /* Popup thêm vào giỏ */
