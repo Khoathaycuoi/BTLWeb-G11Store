@@ -1,7 +1,6 @@
 const ipProducts = [
   {
-    id: "iphone-1",
-    type: "iphone",
+    id: 1,
     name: "iPhone 17 Pro Max 512GB | Hàng Chính Hãng VN/A",
     img: "assets/images/iphone/iphone-17-pro-max-256gb.png",
     price: 40049000,
@@ -9,8 +8,7 @@ const ipProducts = [
     discount: 10,
   },
   {
-    id: "iphone-2",
-    type: "iphone",
+    id: 2,
     name: "iPhone 17 Pro Max 256GB | Hàng Chính Hãng VN/A",
     img: "assets/images/iphone/iphone-17-pro-max-256gb.png",
     price: 33059000,
@@ -18,8 +16,7 @@ const ipProducts = [
     discount: 13,
   },
   {
-    id: "iphone-3",
-    type: "iphone",
+    id: 3,
     name: "iPhone 17 Pro 256GB | Hàng Chính Hãng LL/A",
     img: "assets/images/iphone/iphone-17-pro-256gb.png",
     price: 31319000,
@@ -27,8 +24,7 @@ const ipProducts = [
     discount: 10,
   },
   {
-    id: "iphone-4",
-    type: "iphone",
+    id: 4,
     name: "iPhone 17 256GB | Hàng Chính Hãng VN/A",
     img: "assets/images/iphone/iphone-17-256gb.png",
     price: 20490000,
@@ -36,8 +32,7 @@ const ipProducts = [
     discount: 13,
   },
   {
-    id: "iphone-5",
-    type: "iphone",
+    id: 5,
     name: "iPhone Air 256GB | Hàng Chính Hãng LL/A",
     img: "assets/images/iphone/iphone-air.png",
     price: 29440000,
@@ -45,8 +40,7 @@ const ipProducts = [
     discount: 5,
   },
   {
-    id: "iphone-6",
-    type: "iphone",
+    id: 6,
     name: "iPhone Air 128GB | Hàng Chính Hãng LL/A",
     img: "assets/images/iphone/iphone-air.png",
     price: 26210000,
@@ -54,8 +48,7 @@ const ipProducts = [
     discount: 5,
   },
   {
-    id: "iphone-7",
-    type: "iphone",
+    id: 7,
     name: "iPhone 16 Pro Max 256GB | Hàng Chính Hãng VN/A",
     img: "assets/images/iphone/iphone-16-pro-max-256gb.png",
     price: 26439000,
@@ -63,8 +56,7 @@ const ipProducts = [
     discount: 13,
   },
   {
-    id: "iphone-8",
-    type: "iphone",
+    id: 8,
     name: "iPhone 16 Pro 128GB | Hàng Chính Hãng VN/A",
     img: "assets/images/iphone/iphone-16-pro-128gb.png",
     price: 25190000,
@@ -72,8 +64,7 @@ const ipProducts = [
     discount: 13,
   },
   {
-    id: "iphone-9",
-    type: "iphone",
+    id: 9,
     name: "iPhone 16 128GB | Hàng Chính Hãng LL/A",
     img: "assets/images/iphone/iphone-16-128gb.png",
     price: 18696000,
@@ -81,8 +72,7 @@ const ipProducts = [
     discount: 13,
   },
   {
-    id: "iphone-10",
-    type: "iphone",
+    id: 10,
     name: "iPhone 16e 128GB | Hàng Chính Hãng LL/A",
     img: "assets/images/iphone/iphone-16e-128gb.png",
     price: 15290000,
@@ -90,8 +80,7 @@ const ipProducts = [
     discount: 10,
   },
   {
-    id: "iphone-11",
-    type: "iphone",
+    id: 11,
     name: "iPhone 15 Pro Max 256GB | Hàng Chính Hãng VN/A",
     img: "assets/images/iphone/iphone-15-pro-max-256gb.png",
     price: 26990000,
@@ -99,8 +88,7 @@ const ipProducts = [
     discount: 28,
   },
   {
-    id: "iphone-12",
-    type: "iphone",
+    id: 12,
     name: "iPhone 15 Plus 128GB | Hàng Chính Hãng LL/A",
     img: "assets/images/iphone/iphone-15-plus-128gb.png",
     price: 18490000,
@@ -108,8 +96,7 @@ const ipProducts = [
     discount: 33,
   },
   {
-    id: "iphone-13",
-    type: "iphone",
+    id: 13,
     name: "iPhone 14 Plus 128GB | Hàng Chính Hãng ZA/A",
     img: "assets/images/iphone/iphone-14-plus-128gb.png",
     price: 17390000,
@@ -117,8 +104,7 @@ const ipProducts = [
     discount: 37,
   },
   {
-    id: "iphone-14",
-    type: "iphone",
+    id: 14,
     name: "iPhone 13 128GB | Hàng Chính Hãng ZA/A",
     img: "assets/images/iphone/iphone-13-128gb.png",
     price: 11890000,
@@ -126,8 +112,7 @@ const ipProducts = [
     discount: 13,
   },
   {
-    id: "iphone-15",
-    type: "iphone",
+    id: 15,
     name: "iPhone 14 128GB | Hàng Chính Hãng LL/A",
     img: "assets/images/iphone/iphone-14-128gb.png",
     price: 34990000,
@@ -135,8 +120,7 @@ const ipProducts = [
     discount: 37,
   },
   {
-    id: "iphone-16",
-    type: "iphone",
+    id: 16,
     name: "iPhone 11 128GB | Hàng Chính Hãng LL/A",
     img: "assets/images/iphone/iphone-11-128gb.png",
     price: 9490000,
@@ -144,8 +128,7 @@ const ipProducts = [
     discount: 44,
   },
   {
-    id: "iphone-17",
-    type: "iphone",
+    id: 17,
     name: "iPhone 11 256GB | Hàng Chính Hãng LL/A",
     img: "assets/images/iphone/iphone-11-128gb.png",
     price: 10990000,
@@ -153,8 +136,7 @@ const ipProducts = [
     discount: 35,
   },
   {
-    id: "iphone-18",
-    type: "iphone",
+    id: 18,
     name: "iPhone 11 64GB | Hàng Chính Hãng VN/A",
     img: "assets/images/iphone/iphone-11-128gb.png",
     price: 8990000,
