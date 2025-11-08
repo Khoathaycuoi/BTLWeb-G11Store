@@ -83,7 +83,7 @@ const ipadProducts = [
     id: 11,
     name: "iPad A16 11-inch WiFi 512GB",
     img: "assets/images/ipad/ipad-a16-11-inch-wi-fi-512gb.png",
-    price: 151999000,
+    price: 15999000,
     oldPrice: 16999000,
     discount: 10,
   },

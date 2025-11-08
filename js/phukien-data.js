@@ -8,8 +8,6 @@ const phukienProducts = [
     price: 500000,
     oldPrice: 550000,
     discount: 10,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 2,
@@ -18,8 +16,6 @@ const phukienProducts = [
     price: 620000,
     oldPrice: 690000,
     discount: 10,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 3,
@@ -28,8 +24,6 @@ const phukienProducts = [
     price: 1290000,
     oldPrice: 1490000,
     discount: 13,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 4,
@@ -38,8 +32,6 @@ const phukienProducts = [
     price: 310000,
     oldPrice: 390000,
     discount: 10,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 5,
@@ -48,8 +40,6 @@ const phukienProducts = [
     price: 2390000,
     oldPrice: 2490000,
     discount: 20,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 6,
@@ -58,8 +48,6 @@ const phukienProducts = [
     price: 250000,
     oldPrice: 300000,
     discount: 25,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 7,
@@ -68,8 +56,6 @@ const phukienProducts = [
     price: 150000,
     oldPrice: 200000,
     discount: 25,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 8,
@@ -78,8 +64,6 @@ const phukienProducts = [
     price: 1890000,
     oldPrice: 2290000,
     discount: 17,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 9,
@@ -88,8 +72,6 @@ const phukienProducts = [
     price: 250000,
     oldPrice: 290000,
     discount: 15,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 10,
@@ -98,8 +80,6 @@ const phukienProducts = [
     price: 540000,
     oldPrice: 690000,
     discount: 20,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 11,
@@ -108,8 +88,6 @@ const phukienProducts = [
     price: 900000,
     oldPrice: 1000000,
     discount: 10,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 12,
@@ -118,8 +96,6 @@ const phukienProducts = [
     price: 380000,
     oldPrice: 530000,
     discount: 28,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 13,
@@ -128,8 +104,6 @@ const phukienProducts = [
     price: 2390000,
     oldPrice: 2490000,
     discount: 20,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 14,
@@ -138,8 +112,6 @@ const phukienProducts = [
     price: 3500000,
     oldPrice: 5300000,
     discount: 40,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 15,
@@ -148,8 +120,6 @@ const phukienProducts = [
     price: 1000000,
     oldPrice: 1300000,
     discount: 25,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 16,
@@ -158,8 +128,6 @@ const phukienProducts = [
     price: 890000,
     oldPrice: 1500000,
     discount: 30,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 17,
@@ -168,8 +136,6 @@ const phukienProducts = [
     price: 950000,
     oldPrice: 1200000,
     discount: 20,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 18,
@@ -178,8 +144,6 @@ const phukienProducts = [
     price: 2900000,
     oldPrice: 3400000,
     discount: 14,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 19,
@@ -188,8 +152,6 @@ const phukienProducts = [
     price: 3900000,
     oldPrice: 4500000,
     discount: 14,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 20,
@@ -198,8 +160,6 @@ const phukienProducts = [
     price: 2600000,
     oldPrice: 3200000,
     discount: 18,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 21,
@@ -208,8 +168,6 @@ const phukienProducts = [
     price: 1250000,
     oldPrice: 1400000,
     discount: 20,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 22,
@@ -218,8 +176,6 @@ const phukienProducts = [
     price: 2500000,
     oldPrice: 3300000,
     discount: 25,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 23,
@@ -228,8 +184,6 @@ const phukienProducts = [
     price: 1200000,
     oldPrice: 1300000,
     discount: 5,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
   {
     id: 24,
@@ -238,7 +192,5 @@ const phukienProducts = [
     price: 890000,
     oldPrice: 990000,
     discount: 10,
-    installment: "Trả góp 0%",
-    shipping: "Miễn phí vận chuyển",
   },
 ];
